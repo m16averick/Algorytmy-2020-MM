@@ -1,0 +1,5 @@
+Każde drzewo B o parametrze t i wysokość h może mieć co najwyżej t*h - 1 kluczy
+
+Parametr t definiuje maksymalną liczbę dzieci dla każdego węzła.
+
+Korzeń będzie miał co najmniej dwoje dzieci, każdy węzeł który nie jest liściem będzie miał co najmniej t/2 dzieci.

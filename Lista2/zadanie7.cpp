@@ -1,0 +1,2 @@
+//Powstanie drzewo w postaci prostej linii, każdy węzeł będzie miał jednego potomka po prawej stronie, wykona się n-1 porównań, O(log n)
+//to liczba rekursji, jaką trzeba wykonać na drzewie w celu osiągnięcia wyniku, czyli jego wysokość O(log n)=n

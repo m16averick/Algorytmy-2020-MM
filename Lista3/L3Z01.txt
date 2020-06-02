@@ -1,0 +1,65 @@
+    1. Jeśli f(n) = O( n^log_b(a-e) ) dla pewnej stałej e>0,
+        jest wielomianowo wieksza od f(n)
+        **********to T(n) = Θ( n^log_b(a) ).
+    
+    2. Jeśli f(n) = Θ( n^log_b(a) ) 
+        jesy tego samego rozmiaru
+        **********to T(n) = Θ( n^logb(a) * log n).
+    
+    3. Jeśli f(n) = Ω(n^log_b(a+e) ) dla pewnej stałej e>0 i jeśli
+        af(n/b) <= cf(n) dla pewnej stałej c<1 i wszystkich dostatecznie dużych n, 
+        jest wielomianowo mniejsza
+        **********to T(n) = Θ(f(n)).
+
+
+ogólnie: L(n) = a*L(n/b) => O(n^k), gdzie k= log_b(a)
+
+a=x, b=y, f(n)= z
+n^logb(a)
+
+1. Korzystając z twierdzenia o rekurencji uniwersalnej rozwiąż następujące zależności:
+(a) T(N) = 5T(n/3) + n,
+    a=5, b=3, f(n)=n
+
+    n^1,46 , czyli jest taki epsilon      > n
+    czyli pierwsze:
+        T(n) = Θ( n^1,46 )
+
+(b) T(N) = 4T(n/2) + n^2
+    a=4, b=2, f(n)= n^2
+    n^log2(4)=2
+    n^2 = n^2:
+    drugi:
+    T(n) = Θ( n^2 log n)
+
+(c) T(N) = 9T(n/3) + n^2
+    a=9, b=3, f(n)=n^2
+    n^logb(a)=n^2
+    n^2 = n^2:
+    drugi:
+    T(n) = Θ( n^2 log n).
+
+(d) T(N) = 6T(n/3) + n^2
+    a=6, b=3, f(n)=n^2
+    n^log3(6)= n^1,63
+    n^1,63<n^2
+    trzeci:
+    T(n) = Θ(n^2)
+
+(e) T(N) = 3T(n/3) + n,
+    a=3,b=3, f(n)=n
+    n^log3(3)=n^1
+    n=n
+    T(n) = Θ( n^1 log n)
+
+(f) T(N) = 5T(n/2) + n^2
+    n^log2 5=n^2,32
+    n^2.32>n^2
+    pierwsze:
+    T(n) = Θ( n^2,32 )
+
+(g) T(N) = T(n/2) + 1
+    n^log2 1= n^0
+
+    n^0 ? 1
+    chyba sie nie da ale nie wiem

@@ -1,0 +1,7 @@
+Warunki, które musi spełnić drzewo BST
+
+Jeśli węzeł posiada lewe poddrzewo ( drzewo, którego korzeniem jest lewy syn ), to wszystkie węzły w tym poddrzewie mają wartość niewiększą od wartości danego węzła.
+Jeśli węzeł posiada prawe poddrzewo, to wszystkie węzły w tym poddrzewie są niemniejsze od wartości danego węzła.
+
+Każdy węzeł musi:
+

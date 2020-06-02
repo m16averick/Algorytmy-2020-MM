@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "preLaunchTask": "Make",
+            "request": "launch",
+            "type": "cppvsdbg",
+            "cwd": "${workspaceFolder}",
+            "externalConsole": true,
+            "program": "${workspaceFolder}/hello_world.exe"
+        }
+    ]
+}

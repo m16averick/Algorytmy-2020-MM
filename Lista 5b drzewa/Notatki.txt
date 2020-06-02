@@ -1,0 +1,17 @@
+Jeżeli t=3 to minimalna liczba kluczy = 2
+
+Porządek inorder: l mniejsze r większe
+
+Nie wchodzić do węzła jeśli ma minimalną liczbę kluczy
+
+Chcemy pożyczyć z węzła, który ma nadmiar
+
+Żeby zrobić unsplit child, bierzemy największą wartość lewego podwęzłą albo najmniejszą prawego
+i ją zastępujemy wartością prim
+
+Wybieramy wartość, która ma więcej sąsiednich węzłów bo łatwiej będzie potem prowadzić dalsze obliczenia.
+
+Każde drzewo binarne ma 2^K węzłów
+
+Kopiec to lista drzew dwumianowych w rosnącym stopniu
+
