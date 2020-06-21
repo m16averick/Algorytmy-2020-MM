@@ -17,16 +17,18 @@ struct node  // drzewo bez wskaźnika na rodzica
 
 
 
-node* find(node* t,int x) 
+int find(node* tree,int x) 
 {
-	while(t && t->key!=x)
+	int level = 0;
+	while(tree && tree->key!=x)
 	{
-		if(x<t->key) 
-			t=t->left; 
+		if(x<tree->key) 
+			tree=tree->left; 
 		else
-			t=t->right; 
+			tree=tree->right; 
+		level += 1;
 	}
-	return t;
+	return level;
 }
 
 int main()
